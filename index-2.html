@@ -19,7 +19,7 @@
         .container {
             background-color: bisque;
             border-radius: 8px;
-            box-shadow: 0 4px 10px white(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
             width: 300px;
@@ -82,7 +82,7 @@
                 resultElement.textContent = 'Please enter valid min and max values.';
             } else {
                 const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
-                resultElement.textContent = Random Number: ${randomNum};
+                resultElement.textContent = `Random Number: ${randomNum}`;
             }
         }
     </script>
